@@ -1,6 +1,6 @@
 import './usecases.css';
 import React from "react";
-import {data} from '../../pages/Showcases/data'
+import {data} from '../../data/showcaseData'
 import Link from '@docusaurus/Link';
 
 function UseCases() {

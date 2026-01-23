@@ -45,18 +45,3 @@ export const data = [
     },
 
 ]
-
-// {
-//     "id": ,
-//     "linkName":"",
-//     "image": '',
-//     "companyName": "",
-//     "showcasesShortInfo": "",
-//     "subtitle": "",
-//     "website": "",
-//     "whoWeAre": "",
-//     "whatIs": "",
-//     "WhyWereDocwireApproached": "",
-//     "WhatDidWeDo": "",
-//     "WhatWereTheResults": ""
-// },

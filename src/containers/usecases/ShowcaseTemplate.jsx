@@ -2,10 +2,10 @@ import './showcaseTemplate.css'
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import {Navigate, useParams} from "react-router-dom";
+import {Redirect, useParams} from "react-router-dom";
 import {HiExternalLink, HiArrowRight} from "react-icons/hi";
 import {CTAcontact} from "../index";
-import {data} from "../../pages/Showcases/data";
+import {data} from "../../data/showcaseData";
 
 function ShowcaseTemplate() {
     const props = useParams();
@@ -13,7 +13,7 @@ function ShowcaseTemplate() {
 
     showcase = data.find((show) => show.linkName === props.link)
     if (showcase === undefined) {
-        return <Navigate to="/404"/>
+        return <Redirect to="/404"/>
     }
     return (
         <Layout title={showcase.companyName}>
