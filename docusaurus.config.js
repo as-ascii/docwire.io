@@ -5,9 +5,10 @@ const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 
 // Automatically detect the repository name for GitHub Pages deployment (e.g. in forks)
-const githubRepository = process.env.GITHUB_REPOSITORY;
-const [organizationName, projectName] = githubRepository
-  ? githubRepository.split('/')
+const githubRepository = (process.env.GITHUB_REPOSITORY || '').trim();
+const parts = githubRepository ? githubRepository.split('/') : [];
+const [organizationName, projectName] = parts.length === 2
+  ? parts
   : ['docwire', 'docwire.io']; // Default to main repo
 
 const currentBranch = process.env.CURRENT_BRANCH || 'master';
