@@ -7,11 +7,11 @@ import {HiExternalLink, HiArrowRight} from "react-icons/hi";
 import {CTAcontact} from "../index";
 import {data} from "../../data/showcaseData";
 
-function ShowcaseTemplate() {
-    const props = useParams();
-    let showcase = {}
+function ShowcaseTemplate({ linkName }) {
+    const params = useParams();
+    const link = linkName || params.link;
 
-    showcase = data.find((show) => show.linkName === props.link)
+    const showcase = data.find((show) => show.linkName === link)
     if (showcase === undefined) {
         return <Redirect to="/404"/>
     }
