@@ -12,10 +12,10 @@
     --brand-white: #FFFFFF;
     --brand-black: #000000;
     --brand-orange: #ff9f1c;
-    --brand-purple: #9747ff;
+    --brand-violet: #6600cc;
 
     /* Derived Brand Colors (Calculated) */
-    --brand-gradient-start: color-mix(in srgb, var(--brand-purple), var(--brand-white) 15%);
+    --brand-gradient-start: color-mix(in srgb, var(--brand-violet), var(--brand-white) 15%);
     --brand-gradient-end: color-mix(in srgb, var(--brand-orange), var(--brand-white) 15%);
 
     /* Gradients */
@@ -34,10 +34,10 @@
 
     /* Docusaurus Theme Overrides */
     --ifm-font-family-base: var(--font-family-Open-Sans);
-    --ifm-color-primary: var(--brand-purple);
+    --ifm-color-primary: var(--brand-violet);
     --ifm-background-color: var(--color-bg);
     --ifm-text-color: var(--color-text);
-    --ifm-navbar-background-color: var(--brand-purple);
+    --ifm-navbar-background-color: var(--brand-violet);
     --ifm-navbar-link-color: #FFFFFF;
     --ifm-navbar-link-hover-color: var(--brand-gradient-end);
     --ifm-footer-background-color: var(--color-footer);
@@ -46,15 +46,15 @@
 /* Dark Mode Overrides */
 html[data-theme='dark'] {
     /* Tinting Black with Purple for a branded Deep Onyx look */
-    --color-bg: color-mix(in srgb, var(--brand-black), var(--brand-purple) 6%);
-    --color-surface: color-mix(in srgb, var(--brand-black), var(--brand-purple) 14%);
+    --color-bg: color-mix(in srgb, var(--brand-black), var(--brand-violet) 6%);
+    --color-surface: color-mix(in srgb, var(--brand-black), var(--brand-violet) 14%);
     --color-lighter-bg: var(--color-surface);
     --color-footer: var(--color-surface);
     --color-blog: var(--color-surface);
     --color-text: var(--brand-white);
     --color-subtext: color-mix(in srgb, var(--brand-orange), var(--brand-white) 10%);
 
-    --ifm-navbar-background-color: var(--brand-purple);
+    --ifm-navbar-background-color: var(--brand-violet);
     --ifm-footer-background-color: var(--color-footer);
 }
 
@@ -105,7 +105,7 @@ html[data-theme='dark'] {
 .navbar__item.navbar__link[href*="contact"],
 .navbar__link--contact {
     background-color: #FFFFFF;
-    color: var(--brand-purple) !important;
+    color: var(--brand-violet) !important;
     padding: 0.5rem 1.25rem;
     border-radius: 2rem;
     font-weight: 700;

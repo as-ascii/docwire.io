@@ -16,7 +16,7 @@
 }
 
 .docwire__info-intro_section1 h1 {
-    color: #fff;
+    color: var(--color-text);
     letter-spacing: -4px;
     text-transform: capitalize;
     white-space: normal;
@@ -31,7 +31,7 @@
 
 .docwire__info-intro_section1 h2 {
     max-width: none;
-    color: #7c7c7c;
+    color: var(--color-text);
     text-align: center;
     margin-top: 1em;
     margin-bottom: 0;
@@ -106,7 +106,7 @@
 }
 
 .docwire__info-top h3 {
-    color: #fff;
+    color: var(--color-text);
     margin-top: 0;
     margin-bottom: 20px;
     margin-right: 5px;
@@ -118,7 +118,7 @@
 .docwire__info-top p {
     width: auto;
     max-width: 1126px;
-    color: #7c7c7c;
+    color: var(--color-text);
     font-family: var(--font-family-Open-Sans);
     font-weight: 600;
     line-height: 1.4;
@@ -132,7 +132,7 @@
 }
 
 .docwire__info-bottom h4 {
-    color: #fff;
+    color: var(--color-text);
     margin-top: 0;
     margin-left: 0;
     font-family: var(--font-family);
@@ -145,7 +145,7 @@
 .docwire__info-bottom p {
     height: auto;
     max-height: none;
-    color: #7c7c7c;
+    color: var(--color-text);
     object-fit: fill;
     font-family: var(--font-family-Open-Sans);
     font-weight: 600;
