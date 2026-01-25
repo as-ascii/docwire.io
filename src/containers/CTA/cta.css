@@ -39,7 +39,7 @@
     margin-bottom: 24px;
     line-height: 1;
     font-family: var(--font-family);
-    font-size: min(3em, 42px);
+    font-size: var(--font-size-h3);
     text-align: left;
 }
 
@@ -50,7 +50,7 @@
     font-weight: 600;
     line-height: 1.4;
     text-decoration: none;
-    font-size: min(1.2em, 20px);
+    font-size: var(--font-size-body-large);
     color: var(--brand-white);
     margin-bottom: 0;
 }
@@ -64,7 +64,7 @@
     height: 3.5em;
     max-height: 55px;
     max-width: 190px;
-    font-size: min(1.1em, 16px);
+    font-size: var(--font-size-body);
     color: var(--color-bg);
     border-radius: 8px;
     justify-content: center;
@@ -99,7 +99,7 @@
     .docwire__cta-button {
         width: 180px;
         height: 60px;
-        font-size: 16px;
+        font-size: var(--font-size-body);
         max-height: none;
         max-width: none;
         border-radius: 5px;
@@ -140,6 +140,6 @@
         height: 48px;
         justify-content: center;
         margin-left: 0;
-        font-size: 14px;
+        font-size: var(--font-size-small);
     }
 }

@@ -44,6 +44,15 @@
     /* Layout Defaults */
     --container-width: 80vw;
     --container-max-width: 1126px;
+
+    /* Typography Defaults */
+    --font-size-h1: 3.5rem;        /* ~56px */
+    --font-size-h2: 2.5rem;        /* ~40px */
+    --font-size-h3: 2rem;          /* ~32px */
+    --font-size-h4: 1.5rem;        /* ~24px */
+    --font-size-body-large: 1.25rem; /* ~20px */
+    --font-size-body: 1rem;        /* ~16px */
+    --font-size-small: 0.875rem;   /* ~14px */
 }
 
 /* Dark Mode Overrides */

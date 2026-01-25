@@ -23,13 +23,13 @@
 .docwire__showcase-template_header h1 {
     color: var(--color-text);
     text-align: center;
-    letter-spacing: -4px;
+    letter-spacing: -2px;
     text-transform: capitalize;
     white-space: normal;
     margin-top: 0;
     margin-bottom: 0;
     font-family: var(--font-family);
-    font-size: 7em;
+    font-size: var(--font-size-h1);
     font-weight: 600;
     line-height: 1;
 }
@@ -41,7 +41,7 @@
     margin-top: 1em;
     margin-bottom: 0;
     font-family: var(--font-family-Open-Sans);
-    font-size: 1.5em;
+    font-size: var(--font-size-body-large);
     font-weight: 600;
     line-height: 1.5;
 }
@@ -67,7 +67,7 @@
     margin-bottom: 0;
     margin-left: 0;
     font-family: var(--font-family);
-    font-size: 16px;
+    font-size: var(--font-size-body);
     font-weight: 600;
     line-height: 1;
 }
@@ -89,7 +89,7 @@
     justify-content: center;
     align-items: center;
     font-family: var(--font-family);
-    font-size: 16px;
+    font-size: var(--font-size-body);
     font-weight: 600;
     display: flex;
 }
@@ -115,7 +115,7 @@
 .docwire__showcase-template_content a .text {
     align-items: center;
     font-family: var(--font-family);
-    font-size: 16px;
+    font-size: var(--font-size-body);
     display: flex;
     font-weight: 600;
 }
@@ -154,7 +154,7 @@
     color: var(--color-text);
     object-fit: fill;
     font-family: var(--font-family-Open-Sans);
-    font-size: 16px;
+    font-size: var(--font-size-body);
     font-weight: 600;
     line-height: 1.6;
     overflow: hidden;
@@ -179,7 +179,7 @@
     margin-bottom: 20px;
     margin-right: 5px;
     font-family: var(--font-family);
-    font-size: min(2em, 32px);
+    font-size: var(--font-size-h3);
     line-height: 1;
 }
 
@@ -189,7 +189,7 @@
     color: var(--color-text);
     object-fit: fill;
     font-family: var(--font-family-Open-Sans);
-    font-size: 16px;
+    font-size: var(--font-size-body);
     font-weight: 600;
     line-height: 1.6;
     overflow: hidden;
@@ -206,11 +206,11 @@
     }
 
     .docwire__showcase-template_header h1 {
-        font-size: 64px;
+        font-size: var(--font-size-h2);
     }
 
     .docwire__showcase-template_header h2 {
-        font-size: 20px;
+        font-size: var(--font-size-body-large);
     }
 
     .docwire__showcase-template_content {
@@ -219,7 +219,7 @@
 
     .top_left p {
         margin-bottom: 0;
-        font-size: 12px;
+        font-size: var(--font-size-small);
     }
 
     .docwire__showcase-template_content-right .question h4 {
@@ -227,7 +227,7 @@
     }
 
     .docwire__showcase-template_content-right .answer p {
-        font-size: 12px;
+        font-size: var(--font-size-small);
         margin-top: 10px;
     }
 }
@@ -261,11 +261,11 @@
 
 @media screen and (max-width: 479px) {
     .docwire__showcase-template_header h1 {
-        font-size: 42px;
+        font-size: var(--font-size-h3);
     }
 
     .docwire__showcase-template_header h2 {
-        font-size: 16px;
+        font-size: var(--font-size-body);
     }
 
     .docwire__showcase-template_header-buttons {
@@ -287,6 +287,6 @@
     }
     .docwire__showcase-template_content-right .question h4 {
         margin-bottom: 12px;
-        font-size: 20px;
+        font-size: var(--font-size-body-large);
     }
 }

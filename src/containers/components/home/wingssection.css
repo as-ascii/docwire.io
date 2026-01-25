@@ -26,10 +26,10 @@
     display: flex;
 }
 
-.docwire__wingssection-container_text h3 {
+.docwire__wingssection-container_text h2 {
     color: var(--color-text);
     text-align: left;
-    font-size: min(3em, 42px);
+    font-size: var(--font-size-h2);
     margin-top: 0;
     margin-bottom: 24px;
     font-family: var(--font-family);
@@ -40,7 +40,7 @@
 .docwire__wingssection-container_text p {
     margin-bottom: 0;
     margin-top: 0;
-    font-size: min(1.2em, 20px);
+    font-size: var(--font-size-body-large);
     width: auto;
     max-width: var(--container-max-width);
     color: var(--color-text);

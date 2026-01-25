@@ -19,7 +19,7 @@
 
 .docwire__unlockthepower-content_subheader {
     margin-bottom: 20px;
-    font-size: min(1.2em, 20px);
+    font-size: var(--font-size-body-large);
     width: auto;
     max-width: var(--container-max-width);
     color: var(--color-text);
@@ -34,7 +34,7 @@
 .docwire__unlockthepower-content_header {
     width: 50%;
     text-align: center;
-    font-size: min(3em, 42px);
+    font-size: var(--font-size-h2);
     color: var(--color-text);
     margin-top: 0;
     margin-bottom: 24px;
@@ -46,7 +46,7 @@
 .docwire__unlockthepower-content_section {
     width: 70%;
     text-align: left;
-    font-size: min(1.2em, 20px);
+    font-size: var(--font-size-body-large);
     max-width: var(--container-max-width);
     color: var(--color-text);
     margin-bottom: 100px;
@@ -96,14 +96,14 @@
 .infocard_header {
     width: 90%;
     margin-top: 0.3em;
-    font-size: min(1.2em, 20px);
+    font-size: var(--font-size-body-large);
 }
 
 .infocard_paragraph {
     margin-bottom: 0;
     margin-top: 0.4em;
     font-weight: 600;
-    font-size: min(1em, 16px);
+    font-size: var(--font-size-body);
     height: auto;
     max-height: none;
     color: var(--color-text);

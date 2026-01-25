@@ -7,9 +7,9 @@ function WingsSection() {
         <div className="docwire__wingssection">
             <div className="docwire__wingssection-container">
                 <div className="docwire__wingssection-container_text">
-                    <h3>
+                    <h2>
                         Docwire SDK is a light-weight, secure C++ text miner optimized for any tech stack
-                    </h3>
+                    </h2>
                     <p>
                         Docwire SDK is a light-weight, secure C++ text miner that is optimized for any tech stack. With
                         our

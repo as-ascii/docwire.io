@@ -30,7 +30,7 @@
 
 .docwire__contact-text {
     font-family: var(--font-family);
-    font-size: 1vw;
+    font-size: var(--font-size-body);
     line-height: 1;
     align-items: flex-start;
     padding-left: 80px;
@@ -45,7 +45,7 @@
 
 .docwire__contact-text_h1 {
     text-align: left;
-    font-size: 5.5em;
+    font-size: var(--font-size-h1);
     font-weight: 600;
     letter-spacing: -4px;
     text-transform: capitalize;
@@ -60,7 +60,7 @@
     width: 80%;
     text-align: left;
     margin-top: 25px;
-    font-size: 20px;
+    font-size: var(--font-size-body-large);
     line-height: 1.4;
     font-weight: 600;
     max-height: none;
@@ -96,7 +96,7 @@ h2 {
     margin-bottom: 20px;
     margin-right: 5px;
     font-family: var(--font-family);
-    font-size: 32px;
+    font-size: var(--font-size-h2);
     line-height: 1;
 }
 
@@ -109,7 +109,7 @@ h2 {
         align-items: center;
     }
     .docwire__contact-text_section {
-        font-size: max(2.5em, 20px);
+        font-size: var(--font-size-body-large);
     }
     .docwire__contact-text_h1
     {
