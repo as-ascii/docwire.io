@@ -35,21 +35,6 @@
     --color-link: var(--brand-violet);
     --color-link-hover: var(--color-subtext);
 
-    /* Docusaurus Theme Overrides (Light Mode / Default) */
-    --ifm-font-family-base: var(--font-family-Open-Sans);
-    --ifm-color-primary: var(--brand-violet);
-    --ifm-background-color: var(--color-bg);
-    --ifm-text-color: var(--color-text);
-    --ifm-link-color: var(--color-link);
-    --ifm-link-hover-color: var(--color-link-hover);
-    --ifm-navbar-background-color: var(--brand-violet);
-    --ifm-navbar-link-color: var(--brand-white);
-    --ifm-navbar-link-hover-color: var(--brand-gradient-end);
-    --ifm-footer-background-color: var(--color-footer);
-    --ifm-footer-color: var(--color-text);
-    --ifm-footer-title-color: var(--color-text);
-    --ifm-footer-link-color: var(--color-link);
-
     /* Layout Defaults */
     --container-width: 80vw;
     --container-max-width: 1126px;
@@ -77,6 +62,23 @@ html[data-theme='dark'] {
     /* Link Colors */
     --color-link: var(--brand-white);
     --color-link-hover: var(--brand-violet);
+}
+
+/* Docusaurus Theme Overrides - Applied to both modes to ensure precedence */
+:root, html[data-theme='dark'] {
+    --ifm-font-family-base: var(--font-family-Open-Sans);
+    --ifm-color-primary: var(--brand-violet);
+    --ifm-background-color: var(--color-bg);
+    --ifm-text-color: var(--color-text);
+    --ifm-link-color: var(--color-link);
+    --ifm-link-hover-color: var(--color-link-hover);
+    --ifm-navbar-background-color: var(--brand-violet);
+    --ifm-navbar-link-color: var(--brand-white);
+    --ifm-navbar-link-hover-color: var(--brand-gradient-end);
+    --ifm-footer-background-color: var(--color-footer);
+    --ifm-footer-color: var(--color-text);
+    --ifm-footer-title-color: var(--color-text);
+    --ifm-footer-link-color: var(--color-link);
 }
 
 /* Global Resets */
