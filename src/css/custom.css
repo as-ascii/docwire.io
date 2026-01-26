@@ -154,6 +154,12 @@ html[data-theme='dark'] {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
+.navbar__item.navbar__link[href*="contact"]:hover,
+.navbar__link--contact:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
 /* Logo Adaptation for Violet Header */
 .navbar__logo img {
     filter: invert(100%);
