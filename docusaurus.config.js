@@ -75,12 +75,20 @@ const config = {
           src: 'img/logoDocWire.JPG',
         },
         items: [
+          {to: '/about-us', label: 'About Us', position: 'left'},
+          {to: '/showcases', label: 'Showcases', position: 'left'},
           {
             href: 'https://docwire.readthedocs.io/',
             position: 'left',
-            label: 'Docs',
+            label: 'Documentation',
+          },
+          {
+            href: 'https://github.com/docwire/docwire/releases',
+            label: 'Download',
+            position: 'left',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/contact', label: 'Contact Us', position: 'right'},
           {
             href: 'https://github.com/docwire/docwire',
             label: 'GitHub',
