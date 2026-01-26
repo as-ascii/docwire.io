@@ -14,22 +14,32 @@
     --brand-orange: #ff9f1c;
     --brand-violet: #6600cc;
 
-    /* Derived Brand Colors (Calculated) */
-    --brand-gradient-start: color-mix(in srgb, var(--brand-violet), var(--brand-white) 15%);
-    --brand-gradient-end: color-mix(in srgb, var(--brand-orange), var(--brand-white) 15%);
-
     /* Gradients */
     --gradient-text: linear-gradient(89.97deg, var(--brand-gradient-start) 1.84%, var(--brand-gradient-end) 102.67%);
     --gradient-bar: linear-gradient(283.22deg, var(--brand-gradient-start) -13.86%, var(--brand-gradient-end) 99.55%);
     --gradient-scroll-hover: linear-gradient(283deg, var(--brand-gradient-start) -13.86%, var(--brand-gradient-end) 99.55%);
 
-    /* Light Mode Defaults */
+    /* --- Light Mode Color System --- */
+    /* Base */
     --color-bg: var(--brand-white);
-    --color-surface: color-mix(in srgb, var(--brand-white), var(--brand-black) 4%); /* Light Grey Surface */
     --color-footer: var(--color-bg);
     --color-blog: var(--color-surface);
-    --color-text: color-mix(in srgb, var(--brand-black), var(--brand-white) 12%); /* Soft Black */
-    --color-subtext: color-mix(in srgb, var(--brand-orange), var(--brand-black) 25%); /* High contrast orange for accents */
+
+    /* Fallbacks for older browsers (no color-mix support) */
+    --brand-gradient-start: var(--brand-violet);
+    --brand-gradient-end: var(--brand-orange);
+    --color-surface: #f5f5f5; /* Fallback: Light Grey */
+    --color-text: #1f1f1f;    /* Fallback: Soft Black */
+    --color-subtext: #cc7f16; /* Fallback: High contrast orange */
+
+    /* Derived colors for modern browsers */
+    @supports (color: color-mix(in srgb, red, blue)) {
+        --brand-gradient-start: color-mix(in srgb, var(--brand-violet), var(--brand-white) 15%);
+        --brand-gradient-end: color-mix(in srgb, var(--brand-orange), var(--brand-white) 15%);
+        --color-surface: color-mix(in srgb, var(--brand-white), var(--brand-black) 4%);
+        --color-text: color-mix(in srgb, var(--brand-black), var(--brand-white) 12%);
+        --color-subtext: color-mix(in srgb, var(--brand-orange), var(--brand-black) 25%);
+    }
 
     /* Link Colors */
     --color-link: var(--brand-violet);
@@ -51,13 +61,21 @@
 
 /* Dark Mode Overrides */
 html[data-theme='dark'] {
-    /* Tinting Black with Purple for a branded Deep Onyx look */
+    /* --- Dark Mode Color System --- */
+    /* Base */
     --color-bg: var(--brand-black);
-    --color-surface: color-mix(in srgb, var(--brand-black), var(--brand-violet) 14%);
     --color-footer: var(--color-bg);
     --color-blog: var(--color-surface);
     --color-text: var(--brand-white);
-    --color-subtext: color-mix(in srgb, var(--brand-orange), var(--brand-white) 10%); /* Lighter orange for accents */
+
+    /* Fallbacks for older browsers */
+    --color-surface: #1a1023; /* Fallback: Deep purple */
+    --color-subtext: #ffc966; /* Fallback: Lighter orange */
+
+    @supports (color: color-mix(in srgb, red, blue)) {
+        --color-surface: color-mix(in srgb, var(--brand-black), var(--brand-violet) 14%);
+        --color-subtext: color-mix(in srgb, var(--brand-orange), var(--brand-white) 10%);
+    }
 
     /* Link Colors */
     --color-link: var(--brand-white);
