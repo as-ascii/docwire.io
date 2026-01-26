@@ -127,8 +127,8 @@ html[data-theme='dark'] {
 /* Header "Contact Us" Button Styling */
 .navbar__item.navbar__link[href*="contact"],
 .navbar__link--contact {
-    background-color: #FFFFFF;
-    color: var(--brand-violet) !important;
+    background-color: var(--color-bg);
+    color: var(--color-link) !important;
     padding: 0.5rem 1.25rem;
     border-radius: 2rem;
     font-weight: 700;
