@@ -12,14 +12,14 @@
     margin-bottom: 3vh;
     padding-left: 0;
     padding-right: 0;
-    width: 80vw;
+    width: var(--container-width);
     height: auto;
-    max-width: 1126px;
+    max-width: var(--container-max-width);
 }
 
 .docwire__haveyouever-section img {
     width: 70vw;
-    max-width: 1126px;
+    max-width: var(--container-max-width);
 }
 
 .padding {
@@ -27,14 +27,14 @@
     padding-right: 3em;
 }
 
-.docwire__haveyouever-h1 {
-    font-size: min(3em, 42px);
+.docwire__haveyouever-title {
+    font-size: var(--font-size-h2);
 }
 
-.docwire__haveyouever-h2 {
-    color: #7c7c7c;
+.docwire__haveyouever-text {
+    color: var(--color-text);
     font-family: var(--font-family-Open-Sans);
-    font-size: 16px;
+    font-size: var(--font-size-body);
     font-weight: 600;
     line-height: 22px;
     padding-top: 3vh;
@@ -49,9 +49,9 @@
 }
 
 .list-item {
-    color: gray;
+    color: var(--color-text);
     font-family: var(--font-family-Open-Sans);
-    font-size: 22px;
+    font-size: var(--font-size-body-large);
     font-weight: 500;
     line-height: 30px;
 }
@@ -59,10 +59,10 @@
 .docwire__haveyouever-content_text {
     height: auto;
     max-height: none;
-    color: #7c7c7c;
+    color: var(--color-text);
     object-fit: fill;
     font-family: var(--font-family-Open-Sans);
-    font-size: 16px;
+    font-size: var(--font-size-body);
     font-weight: 600;
     overflow: hidden;
 }

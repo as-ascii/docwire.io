@@ -6,7 +6,7 @@ function HomeHaveYouEver() {
     return (
         <div className="docwire__haveyouever">
             <div className="docwire__haveyouever-section padding">
-                <h1 className="docwire__haveyouever-h1">Have you ever wanted to:</h1>
+                <h2 className="docwire__haveyouever-title">Have you ever wanted to:</h2>
                 {/* eslint-disable-next-line jsx-a11y/no-redundant-roles */}
                 <ul role="list" className="list">
                     <li className="list-item">Extract text data from images and scanned documents without the need for
@@ -28,7 +28,7 @@ function HomeHaveYouEver() {
                         extraction processes and increase efficiency for your team?
                     </li>
                 </ul>
-                <h2 className="docwire__haveyouever-h2">
+                <p className="docwire__haveyouever-text">
                     Our cutting-edge data extraction SDK offers advanced capabilities for extracting text and data from
                     a wide range of sources, including images, PDFs, emails, and iWork files.
                     With powerful OCR technology and advanced document parsing features, our software is optimized
@@ -38,7 +38,7 @@ function HomeHaveYouEver() {
                     manage data.
                     Say goodbye to manual input and hello to increased productivity and efficiency
                     for your team with our data extraction solution.
-                </h2>
+                </p>
                 <img src={Graphic} alt="Text extraction platforms"/>
             </div>
         </div>

@@ -5,9 +5,9 @@
 }
 
 .docwire__unlockthepower-content {
-    width: 80vw;
+    width: var(--container-width);
     height: auto;
-    max-width: 1126px;
+    max-width: var(--container-max-width);
     flex-direction: column;
     align-items: center;
     margin-top: 0;
@@ -19,10 +19,10 @@
 
 .docwire__unlockthepower-content_subheader {
     margin-bottom: 20px;
-    font-size: min(1.2em, 20px);
+    font-size: var(--font-size-body-large);
     width: auto;
-    max-width: 1126px;
-    color: #7c7c7c;
+    max-width: var(--container-max-width);
+    color: var(--color-text);
     text-align: center;
     margin-top: 1em;
     font-family: var(--font-family-Open-Sans);
@@ -34,7 +34,7 @@
 .docwire__unlockthepower-content_header {
     width: 50%;
     text-align: center;
-    font-size: min(3em, 42px);
+    font-size: var(--font-size-h2);
     color: var(--color-text);
     margin-top: 0;
     margin-bottom: 24px;
@@ -46,9 +46,9 @@
 .docwire__unlockthepower-content_section {
     width: 70%;
     text-align: left;
-    font-size: min(1.2em, 20px);
-    max-width: 1126px;
-    color: #7c7c7c;
+    font-size: var(--font-size-body-large);
+    max-width: var(--container-max-width);
+    color: var(--color-text);
     margin-bottom: 100px;
     font-family: var(--font-family-Open-Sans);
     font-weight: 600;
@@ -57,9 +57,9 @@
 }
 
 .docwire__unlockthepower-content_infocard_section {
-    width: 80vw;
+    width: var(--container-width);
     height: auto;
-    max-width: 1126px;
+    max-width: var(--container-max-width);
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 0;
@@ -79,7 +79,7 @@
 .docwire__unlockthepower-content_infocard_content {
     width: 100%;
     height: 100%;
-    background-color: var(--color-bg);
+    background-color: var(--color-surface);
     font-family: var(--font-family-Open-Sans);
     border-radius: 6px;
     flex-direction: column;
@@ -96,17 +96,17 @@
 .infocard_header {
     width: 90%;
     margin-top: 0.3em;
-    font-size: min(1.2em, 20px);
+    font-size: var(--font-size-body-large);
 }
 
 .infocard_paragraph {
     margin-bottom: 0;
     margin-top: 0.4em;
     font-weight: 600;
-    font-size: min(1em, 16px);
+    font-size: var(--font-size-body);
     height: auto;
     max-height: none;
-    color: #7c7c7c;
+    color: var(--color-text);
     object-fit: fill;
     line-height: 1.6;
     overflow: hidden;

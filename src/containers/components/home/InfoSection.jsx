@@ -6,8 +6,8 @@ function InfoSection() {
     return (
         <div className="docwire__info">
             <div className="docwire__info-intro_section1">
-                <h1>So, what can it do?</h1>
-                <h2>Well let us show you</h2>
+                <h2>So, what can it do?</h2>
+                <p className="docwire__info-subtitle">Well let us show you</p>
             </div>
             <div className="docwire__info-intro_section2">
                 <div className="docwire__info-intro_section2-text">
