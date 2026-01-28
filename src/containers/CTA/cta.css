@@ -37,20 +37,21 @@
     color: var(--brand-white);
     margin-top: 0;
     margin-bottom: 24px;
-    line-height: 1;
-    font-family: var(--font-family);
+    line-height: var(--line-height-heading);
+    font-family: var(--font-family-header);
     font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-h3);
     text-align: left;
 }
 
 .docwire__cta-content p {
     width: auto;
     max-width: var(--container-max-width);
-    font-family: var(--font-family-Open-Sans);
-    font-weight: 600;
-    line-height: 1.4;
+    font-family: var(--font-family-lead);
+    font-weight: var(--font-weight-lead);
+    line-height: var(--line-height-lead);
     text-decoration: none;
-    font-size: var(--font-size-body-large);
+    font-size: var(--font-size-lead);
     color: var(--brand-white);
     margin-bottom: 0;
 }
@@ -64,15 +65,15 @@
     height: 3.5em;
     max-height: 55px;
     max-width: 190px;
-    font-size: var(--font-size-body);
+    font-size: var(--font-size-ui);
     color: var(--color-bg);
     border-radius: 8px;
     justify-content: center;
     align-items: center;
-    font-family: var(--font-family);
+    font-family: var(--font-family-ui);
     display: flex;
     padding: 9px 15px;
-    font-weight: 600;
+    font-weight: var(--font-weight-ui);
     text-decoration: none;
     line-height: inherit;
     cursor: pointer;
@@ -99,7 +100,6 @@
     .docwire__cta-button {
         width: 180px;
         height: 60px;
-        font-size: var(--font-size-body);
         max-height: none;
         max-width: none;
         border-radius: 5px;
@@ -140,6 +140,5 @@
         height: 48px;
         justify-content: center;
         margin-left: 0;
-        font-size: var(--font-size-small);
     }
 }

@@ -8,9 +8,9 @@
     margin-bottom: 20px;
     padding-left: 0;
     padding-right: 0;
-    font-family: var(--font-family-Open-Sans);
-    font-size: var(--font-size-body);
-    font-weight: 600;
+    font-family: var(--font-family-ui);
+    font-size: var(--font-size-ui);
+    font-weight: var(--font-weight-ui);
     display: flex;
 }
 
@@ -26,9 +26,9 @@
     background-color: var(--color-bg);
     align-items: flex-start;
     padding-left: 0;
-    font-family: var(--font-family-Open-Sans);
-    font-size: var(--font-size-body);
-    font-weight: 600;
+    font-family: var(--font-family-ui);
+    font-size: var(--font-size-ui);
+    font-weight: var(--font-weight-ui);
     display: block;
 }
 
@@ -47,14 +47,15 @@
     border-radius: 5px;
     margin-top: 30px;
     padding: 14px 20px;
-    font-family: var(--font-family);
-    font-size: var(--font-size-body);
+    font-family: var(--font-family-ui);
+    font-size: var(--font-size-ui);
     color: var(--color-bg);
     line-height: inherit;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
     border: 0;
+    font-weight: var(--font-weight-ui);
 }
 
 .FormAccepted {
@@ -66,8 +67,8 @@
     background-color: transparent;
     align-items: flex-start;
     padding-left: 0;
-    font-family: var(--font-family-Open-Sans);
-    font-size: var(--font-size-body);
-    font-weight: 600;
+    font-family: var(--font-family-ui);
+    font-size: var(--font-size-ui);
+    font-weight: var(--font-weight-ui);
     display: block;
 }

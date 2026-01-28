@@ -19,15 +19,15 @@
 
 .docwire__unlockthepower-content_subheader {
     margin-bottom: 20px;
-    font-size: var(--font-size-body-large);
+    font-size: var(--font-size-lead);
     width: auto;
     max-width: var(--container-max-width);
     color: var(--color-text);
     text-align: center;
     margin-top: 1em;
-    font-family: var(--font-family-Open-Sans);
-    font-weight: 600;
-    line-height: 1.4;
+    font-family: var(--font-family-lead);
+    font-weight: var(--font-weight-lead);
+    line-height: var(--line-height-lead);
     text-decoration: none;
 }
 
@@ -38,21 +38,21 @@
     color: var(--color-text);
     margin-top: 0;
     margin-bottom: 24px;
-    font-family: var(--font-family);
-    line-height: 1;
-    font-weight: bold;
+    font-family: var(--font-family-header);
+    line-height: var(--line-height-heading);
+    font-weight: var(--font-weight-h2);
 }
 
 .docwire__unlockthepower-content_section {
     width: 70%;
     text-align: left;
-    font-size: var(--font-size-body-large);
+    font-size: var(--font-size-lead);
     max-width: var(--container-max-width);
     color: var(--color-text);
     margin-bottom: 100px;
-    font-family: var(--font-family-Open-Sans);
-    font-weight: 600;
-    line-height: 1.4;
+    font-family: var(--font-family-lead);
+    font-weight: var(--font-weight-lead);
+    line-height: var(--line-height-lead);
     text-decoration: none;
 }
 
@@ -80,7 +80,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--color-surface);
-    font-family: var(--font-family-Open-Sans);
+    font-family: var(--font-family-body);
     border-radius: 6px;
     flex-direction: column;
     align-items: flex-start;
@@ -96,19 +96,19 @@
 .infocard_header {
     width: 90%;
     margin-top: 0.3em;
-    font-size: var(--font-size-body-large);
+    font-family: var(--font-family-lead);
+    font-size: var(--font-size-lead);
 }
 
 .infocard_paragraph {
     margin-bottom: 0;
     margin-top: 0.4em;
-    font-weight: 600;
+    font-weight: var(--font-weight-body);
     font-size: var(--font-size-body);
     height: auto;
     max-height: none;
     color: var(--color-text);
-    object-fit: fill;
-    line-height: 1.6;
+    line-height: var(--line-height-body);
     overflow: hidden;
 }
 

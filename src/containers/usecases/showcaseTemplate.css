@@ -28,10 +28,10 @@
     white-space: normal;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: var(--font-family);
+    font-family: var(--font-family-header);
     font-size: var(--font-size-h1);
-    font-weight: 600;
-    line-height: 1;
+    font-weight: var(--font-weight-h1);
+    line-height: var(--line-height-heading);
 }
 
 .docwire__showcase-template_header h2 {
@@ -40,10 +40,10 @@
     text-align: center;
     margin-top: 1em;
     margin-bottom: 0;
-    font-family: var(--font-family-Open-Sans);
-    font-size: var(--font-size-body-large);
-    font-weight: 600;
-    line-height: 1.5;
+    font-family: var(--font-family-header);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    line-height: var(--line-height-heading);
 }
 
 .docwire__showcase-template_header-buttons {
@@ -57,8 +57,6 @@
     align-items: center;
     text-decoration: none;
     display: flex;
-    max-width: 100%;
-    font-family: var(--font-family-Open-Sans);
 }
 
 .docwire__showcase-template_header-buttons .link div {
@@ -66,9 +64,9 @@
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
-    font-family: var(--font-family);
-    font-size: var(--font-size-body);
-    font-weight: 600;
+    font-family: var(--font-family-ui);
+    font-size: var(--font-size-ui);
+    font-weight: var(--font-weight-ui);
     line-height: 1;
 }
 
@@ -88,9 +86,9 @@
     border-radius: 8px;
     justify-content: center;
     align-items: center;
-    font-family: var(--font-family);
-    font-size: var(--font-size-body);
-    font-weight: 600;
+    font-family: var(--font-family-ui);
+    font-size: var(--font-size-ui);
+    font-weight: var(--font-weight-ui);
     display: flex;
 }
 
@@ -114,10 +112,10 @@
 
 .docwire__showcase-template_content a .text {
     align-items: center;
-    font-family: var(--font-family);
-    font-size: var(--font-size-body);
+    font-family: var(--font-family-ui);
+    font-size: var(--font-size-ui);
     display: flex;
-    font-weight: 600;
+    font-weight: var(--font-weight-ui);
 }
 
 .docwire__showcase-template_content a .arrow {
@@ -153,11 +151,10 @@
     height: auto;
     max-height: none;
     color: var(--color-text);
-    object-fit: fill;
-    font-family: var(--font-family-Open-Sans);
+    font-family: var(--font-family-body);
     font-size: var(--font-size-body);
-    font-weight: 600;
-    line-height: 1.6;
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-body);
     overflow: hidden;
 }
 
@@ -179,20 +176,20 @@
     margin-top: 0;
     margin-bottom: 20px;
     margin-right: 5px;
-    font-family: var(--font-family);
-    font-size: var(--font-size-h3);
-    line-height: 1;
+    font-family: var(--font-family-header);
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-h4);
+    line-height: var(--line-height-heading);
 }
 
 .docwire__showcase-template_content-right .answer {
     height: auto;
     max-height: none;
     color: var(--color-text);
-    object-fit: fill;
-    font-family: var(--font-family-Open-Sans);
+    font-family: var(--font-family-body);
     font-size: var(--font-size-body);
-    font-weight: 600;
-    line-height: 1.6;
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-body);
     overflow: hidden;
 }
 
@@ -206,17 +203,12 @@
         width: 90vw;
     }
 
-    .docwire__showcase-template_header h2 {
-        font-size: var(--font-size-body-large);
-    }
-
     .docwire__showcase-template_content {
         width: 90vw;
     }
 
     .top_left p {
         margin-bottom: 0;
-        font-size: var(--font-size-small);
     }
 
     .docwire__showcase-template_content-right .question h4 {
@@ -224,7 +216,6 @@
     }
 
     .docwire__showcase-template_content-right .answer p {
-        font-size: var(--font-size-small);
         margin-top: 10px;
     }
 }
@@ -257,10 +248,6 @@
 }
 
 @media screen and (max-width: 479px) {
-    .docwire__showcase-template_header h2 {
-        font-size: var(--font-size-body);
-    }
-
     .docwire__showcase-template_header-buttons {
         width: auto;
         height: 100px;
@@ -280,6 +267,5 @@
     }
     .docwire__showcase-template_content-right .question h4 {
         margin-bottom: 12px;
-        font-size: var(--font-size-body-large);
     }
 }

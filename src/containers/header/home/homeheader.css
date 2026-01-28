@@ -8,7 +8,6 @@
     display: flex;
     width: 80vw;
     max-width: 1126px;
-    font-family: var(--font-family);
     background-color: var(--color-bg);
 }
 
@@ -22,19 +21,18 @@
 .docwire__header-software-content_header {
     margin-top: 10px;
     font-size: var(--font-size-h1);
-    font-weight: 600;
-    font-family: var(--font-family);
+    font-weight: var(--font-weight-h1);
+    font-family: var(--font-family-header);
 }
 
 .docwire__header-software-content_text {
     height: auto;
     max-height: none;
     color: var(--color-text);
-    object-fit: fill;
-    font-family: var(--font-family-Open-Sans);
+    font-family: var(--font-family-body);
     font-size: var(--font-size-body);
-    font-weight: 600;
-    line-height: 1.6;
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-body);
     overflow: hidden;
 }
 

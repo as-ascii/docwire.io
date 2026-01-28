@@ -23,14 +23,14 @@
 }
 
 .docwire__nopage-content404 h1 {
-    font-family: var(--font-family);
+    font-family: var(--font-family-header);
     position: absolute;
     left: 50%;
     top: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: var(--font-size-h1);
-    font-weight: 900;
+    font-weight: var(--font-weight-h1);
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
@@ -41,13 +41,13 @@
 }
 
 .docwire__nopage-content404 h2 {
-    font-family: var(--font-family);
+    font-family: var(--font-family-header);
     position: absolute;
     left: 0;
     right: 0;
     top: 110px;
     font-size: var(--font-size-h2);
-    font-weight: 700;
+    font-weight: var(--font-weight-h2);
     color: var(--color-text);
     text-transform: uppercase;
     text-shadow: 0 2px 0 #AE67FA;
@@ -56,7 +56,7 @@
 }
 
 .docwire__nopage-button {
-    font-family: var(--font-family);
+    font-family: var(--font-family-ui);
     display: inline-block;
     text-transform: uppercase;
     color: var(--brand-violet);
@@ -64,8 +64,8 @@
     border: 2px solid;
     background: 0 0;
     padding: 10px 40px;
-    font-size: var(--font-size-small);
-    font-weight: 700;
+    font-size: var(--font-size-ui);
+    font-weight: var(--font-weight-ui);
     -webkit-transition: .2s all;
     transition: .2s all;
 }

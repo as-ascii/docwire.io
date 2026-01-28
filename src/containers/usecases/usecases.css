@@ -22,8 +22,9 @@
 .docwire__usecases-hero_top h1 {
     color: var(--color-text);
     margin-top: 3.5rem;
-    font-family: var(--font-family);
+    font-family: var(--font-family-header);
     font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-h1);
     margin-bottom: 1.5rem;
 }
 
@@ -36,11 +37,11 @@
     max-width: var(--container-max-width);
     color: var(--color-text);
     margin-bottom: 100px;
-    font-family: var(--font-family-Open-Sans);
-    font-weight: 600;
-    line-height: 1.4;
+    font-family: var(--font-family-lead);
+    font-weight: var(--font-weight-lead);
+    line-height: var(--line-height-lead);
     text-decoration: none;
-    font-size: var(--font-size-body-large);
+    font-size: var(--font-size-lead);
 }
 
 .docwire__usecases-hero_bottom {
@@ -62,24 +63,23 @@
 }
 
 .docwire__usecases-single h2 {
-    line-height: 36px;
+    line-height: var(--line-height-heading);
     color: var(--color-text);
     margin-top: 15px;
     margin-bottom: 10px;
-    font-family: var(--font-family);
-    font-size: var(--font-size-body-large);
-    font-weight: 600;
+    font-family: var(--font-family-header);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
 }
 
 .docwire__usecases-single p {
     height: auto;
     max-height: none;
     color: var(--color-text);
-    object-fit: fill;
-    font-family: var(--font-family-Open-Sans);
+    font-family: var(--font-family-body);
     font-size: var(--font-size-body);
-    font-weight: 600;
-    line-height: 1.6;
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-body);
     overflow: hidden;
 }
 
@@ -169,11 +169,9 @@
     }
     .docwire__usecases-single a h2 {
         margin-bottom: 5px;
-        font-size: var(--font-size-body);
     }
     .docwire__usecases-single p {
         margin-bottom: 0;
-        font-size: var(--font-size-small);
     }
 }
 
@@ -184,7 +182,6 @@
 
     .docwire__usecases-hero_top p {
         margin-bottom: 30px;
-        font-size: var(--font-size-small);
     }
 
     .docwire__usecases-hero_bottom {

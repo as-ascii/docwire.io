@@ -1,7 +1,6 @@
 .docwire__haveyouever {
     display: flex;
     justify-content: center;
-    font-family: var(--font-family);
 }
 
 .docwire__haveyouever-section {
@@ -29,13 +28,15 @@
 
 .docwire__haveyouever-title {
     font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    font-family: var(--font-family-header);
 }
 
 .docwire__haveyouever-text {
     color: var(--color-text);
-    font-family: var(--font-family-Open-Sans);
+    font-family: var(--font-family-body);
     font-size: var(--font-size-body);
-    font-weight: 600;
+    font-weight: var(--font-weight-body);
     line-height: 22px;
     padding-top: 3vh;
     text-align: justify;
@@ -50,9 +51,9 @@
 
 .list-item {
     color: var(--color-text);
-    font-family: var(--font-family-Open-Sans);
-    font-size: var(--font-size-body-large);
-    font-weight: 500;
+    font-family: var(--font-family-lead);
+    font-size: var(--font-size-lead);
+    font-weight: var(--font-weight-lead);
     line-height: 30px;
 }
 
@@ -60,10 +61,9 @@
     height: auto;
     max-height: none;
     color: var(--color-text);
-    object-fit: fill;
-    font-family: var(--font-family-Open-Sans);
+    font-family: var(--font-family-body);
     font-size: var(--font-size-body);
-    font-weight: 600;
+    font-weight: var(--font-weight-body);
     overflow: hidden;
 }
 

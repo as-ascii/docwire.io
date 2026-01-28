@@ -1,12 +1,19 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans+Condensed:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap');
 
 /* Global Variables */
 :root {
-    /* Fonts */
-    --font-family: 'Montserrat', sans-serif; /* Updated to Montserrat based on usage */
-    --font-family-Open-Sans: 'Open Sans', sans-serif;
+    /* Fonts - Primitives */
+    --font-plex-sans: 'IBM Plex Sans', sans-serif;
+    --font-plex-condensed: 'IBM Plex Sans Condensed', sans-serif;
+    --font-plex-mono: 'IBM Plex Mono', monospace;
+
+    /* Fonts - Semantic */
+    --font-family-header: var(--font-plex-sans);    /* Headlines */
+    --font-family-body: var(--font-plex-sans);      /* Body Text */
+    --font-family-lead: var(--font-plex-sans);      /* Lead Text */
+    --font-family-ui: var(--font-plex-condensed);   /* UI Labels / Nav */
+    --font-family-code: var(--font-plex-mono);      /* Code */
 
     /* Colors - Brand */
     --brand-white: #FFFFFF;
@@ -45,9 +52,28 @@
     --font-size-h2: clamp(1.75rem, 4vw + 1rem, 2.5rem); /* Fluid: 28px -> 40px */
     --font-size-h3: clamp(1.5rem, 3vw + 1rem, 2rem);    /* Fluid: 24px -> 32px */
     --font-size-h4: clamp(1.25rem, 2vw + 1rem, 1.5rem); /* Fluid: 20px -> 24px */
-    --font-size-body-large: 1.25rem; /* ~20px */
-    --font-size-body: 1rem;        /* ~16px */
-    --font-size-small: 0.875rem;   /* ~14px */
+    --font-size-lead: clamp(1rem, 1vw + 0.75rem, 1.25rem); /* Fluid: 16px -> 20px */
+    --font-size-body: clamp(0.875rem, 0.5vw + 0.75rem, 1rem);    /* Fluid: 14px -> 16px */
+    --font-size-ui: var(--font-size-body); /* UI Elements (Buttons, Inputs) */
+
+    /* Font Weights - Brand Definition */
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Font Weights - Semantic */
+    --font-weight-h1: var(--font-weight-bold);
+    --font-weight-h2: var(--font-weight-bold);
+    --font-weight-h3: var(--font-weight-semibold);
+    --font-weight-h4: var(--font-weight-semibold);
+    --font-weight-ui: var(--font-weight-semibold);
+    --font-weight-lead: var(--font-weight-semibold);
+    --font-weight-body: var(--font-weight-regular);
+
+    /* Line Heights - Semantic */
+    --line-height-heading: 1.2;
+    --line-height-lead: 1.4;
+    --line-height-body: 1.6;
 }
 
 /* Dark Mode Overrides */
@@ -85,7 +111,9 @@ html[data-theme='dark'] {
 
 /* Docusaurus Theme Overrides - Applied to both modes to ensure precedence */
 :root, html[data-theme='dark'] {
-    --ifm-font-family-base: var(--font-family-Open-Sans);
+    --ifm-font-family-base: var(--font-family-body);
+    --ifm-font-weight-base: var(--font-weight-body);
+    --ifm-font-family-monospace: var(--font-family-code);
     --ifm-color-primary: var(--brand-violet);
     --ifm-background-color: var(--color-bg);
     --ifm-text-color: var(--color-text);
@@ -143,6 +171,12 @@ html[data-theme='dark'] {
     .section__margin { margin: 4rem 2rem; }
 }
 
+/* Navbar Typography */
+.navbar__item,
+.navbar__link {
+    font-family: var(--font-family-ui);
+}
+
 /* Header "Contact Us" Button Styling */
 .navbar__item.navbar__link[href*="contact"],
 .navbar__link--contact {
@@ -150,7 +184,7 @@ html[data-theme='dark'] {
     color: var(--color-link) !important;
     padding: 0.5rem 1.25rem;
     border-radius: 2rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-ui);
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
