@@ -2,7 +2,6 @@
 title: Case Studies in the 4th Industrial Revolution
 authors: ferid
 tags: [industrial-revolution, case-studies, technology]
-image: /img/preview.jpg
 ---
 
 Embarking on a journey through case studies, we witness firsthand the transformative power of the 4th Industrial Revolution. Smart manufacturing plants hum with the integration of IoT sensors and AI analytics, optimizing efficiency. Biotechnology revolutionizes healthcare, offering tailored treatments through gene editing and personalized medicine. Precision farming, empowered by data analytics, reshapes agriculture for sustainability. Meanwhile, autonomous vehicles promise a future of efficient, safe urban mobility. These cases illuminate the tangible impacts of advanced technologies across industries. Join us as we explore these innovations, their implementations, and the promising future they pave in this era of industrial revolution.
