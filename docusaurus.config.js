@@ -58,7 +58,7 @@ const config = {
           showReadingTime: true,
           editUrl:
             `https://github.com/${organizationName}/${projectName}/tree/${currentBranch}/`,
-          remarkPlugins: [
+          beforeDefaultRemarkPlugins: [
             require('./src/plugins/remark-youtube'),
             require('./src/plugins/remark-static-images'),
           ],
@@ -67,7 +67,7 @@ const config = {
           customCss: './src/css/custom.css',
         },
         pages: {
-          remarkPlugins: [
+          beforeDefaultRemarkPlugins: [
             require('./src/plugins/remark-youtube'),
             require('./src/plugins/remark-static-images'),
           ],
