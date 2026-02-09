@@ -72,6 +72,10 @@ const config = {
             require('./src/plugins/remark-static-images'),
           ],
         },
+        gtag: {
+          trackingID: isProd ? 'G-KEVHQDD6GK' : 'G-0000000000',
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
