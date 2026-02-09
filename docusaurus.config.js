@@ -58,9 +58,23 @@ const config = {
           showReadingTime: true,
           editUrl:
             `https://github.com/${organizationName}/${projectName}/tree/${currentBranch}/`,
+          beforeDefaultRemarkPlugins: [
+            require('./src/plugins/remark-youtube'),
+            require('./src/plugins/remark-static-images'),
+          ],
         },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        pages: {
+          beforeDefaultRemarkPlugins: [
+            require('./src/plugins/remark-youtube'),
+            require('./src/plugins/remark-static-images'),
+          ],
+        },
+        gtag: {
+          trackingID: isProd ? 'G-KEVHQDD6GK' : 'G-0000000000',
+          anonymizeIP: true,
         },
       }),
     ],
